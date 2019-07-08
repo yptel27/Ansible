@@ -15,6 +15,8 @@
 
     - name: Merge configuration data from a file and commit
       juniper_junos_config: 
+        user: "labroot"
+        passwd: "lab123"
         load: "merge"
         format: "text"
         src: "build_conf/{{ inventory_hostname }}/junos-config.conf"
